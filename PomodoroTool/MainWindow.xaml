@@ -1,0 +1,89 @@
+﻿<Window x:Class="PomodoroTool.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="" Height="121.25" Width="185" Loaded="Window_Loaded"
+        x:Name="Window" MouseDoubleClick="MainWindow_MouseDoubleClick" ShowInTaskbar="False" ResizeMode="CanMinimize" Topmost="True" SizeToContent="WidthAndHeight" WindowStyle="None" VerticalAlignment="Center" VerticalContentAlignment="Center"
+        Template="{DynamicResource WindowTemplate}" Background="Transparent" AllowsTransparency="True" MouseLeftButtonUp="MainWindow_MouseLeftButtonUp" MouseDown="MainWindow_MouseLeftButtonUp">
+    
+    <Window.Resources>    
+        <ControlTemplate TargetType="Window" x:Key="WindowTemplate">
+            <Grid SnapsToDevicePixels="True">
+                <Ellipse Margin="0,10,0,0">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush GradientOrigin="0.75,0.25">
+                            <GradientStop Color="Tomato" Offset="0.0" />
+                            <GradientStop Color="Red" Offset="0.5" />
+                            <GradientStop Color="DarkRed" Offset="1.0" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Image Source="/PomodoroTool;component/Resources/tomatoStem.png" Height="40" Width="90" VerticalAlignment="Top"></Image>
+
+                <ContentPresenter HorizontalAlignment="Center"
+                             VerticalAlignment="Center"/>
+            </Grid>
+        </ControlTemplate>
+        <Style TargetType="Line" >
+            <Setter Property="Stroke">
+                <Setter.Value>
+                    <LinearGradientBrush>
+                        <GradientStop Color="OliveDrab" Offset="0.2" />
+                        <GradientStop Color="DarkOliveGreen" Offset="0.5" />
+                        <GradientStop Color="DarkGreen" Offset="0.8" />
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="StrokeThickness" Value="6" />
+            <Setter Property="StrokeEndLineCap" Value="Round" />
+            <Setter Property="StrokeLineJoin" Value="Round" />
+            <Setter Property="StrokeStartLineCap" Value="Triangle" />
+        </Style>
+
+
+    </Window.Resources>
+    <Window.ContextMenu>
+        <ContextMenu>
+            <CheckBox Name="checkBox1" Width="120">常に手前に表示
+                <CheckBox.IsChecked>
+                    <Binding ElementName="MainWindow" Path="Topmost" />
+                </CheckBox.IsChecked>
+            </CheckBox>
+            <WrapPanel>            
+                <TextBox Name="MinuteText" Width="30">
+                    <TextBox.Text>
+                        <Binding Path="IntervalMinutes" UpdateSourceTrigger="PropertyChanged" StringFormat="00">
+                            <Binding.ValidationRules>
+                                <ExceptionValidationRule />
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <Label Width="20">:</Label>
+                <TextBox Name="SecondText" Width="30">
+                    <TextBox.Text>
+                        <Binding Path="IntervalSeconds" UpdateSourceTrigger="PropertyChanged" StringFormat="00">
+                            <Binding.ValidationRules>
+                                <ExceptionValidationRule />
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
+                </TextBox>
+                <Button Name="SetTimeButton" Click="SetTimeButton_Click" >Reset</Button>
+            </WrapPanel>
+            <Button Name="CloseButton" Click="CloseButton_Click" >Exit</Button>
+        </ContextMenu>
+    </Window.ContextMenu>
+    <Canvas Height="86.25" Width="163.75" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+        <Label Name="label2" VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" Foreground="DarkGreen" FontFamily="Gigi" FontWeight="Bold" Margin="22,12,20,0" OverridesDefaultStyle="False" >
+            <Label.FontSize>
+                <Binding ElementName="label1" Path="FontSize"/>
+            </Label.FontSize>
+            <Label.Content>
+                <Binding ElementName="label1" Path="Content"/>
+            </Label.Content>
+        </Label>
+        <Label Name="label1" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Center" Foreground="YellowGreen" FontFamily="Gigi" FontWeight="Bold" Margin="20,10,20,0" OverridesDefaultStyle="False">
+            Label</Label>
+        
+    </Canvas>
+</Window>

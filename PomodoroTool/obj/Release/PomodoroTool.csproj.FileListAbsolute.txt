@@ -1,0 +1,12 @@
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\bin\Release\PomodoroTool.exe
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\bin\Release\PomodoroTool.pdb
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\App.g.cs
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\PomodoroTool_MarkupCompile.cache
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\PomodoroTool.g.resources
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\PomodoroTool.Properties.Resources.resources
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\PomodoroTool.csproj.GenerateResource.Cache
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\PomodoroTool.exe
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\PomodoroTool.pdb
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\MainWindow.baml
+C:\Documents and Settings\suzuki-satoshi\My Documents\Visual Studio 2008\Projects\PomodoroTool\PomodoroTool\obj\Release\MainWindow.g.cs
